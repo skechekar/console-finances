@@ -110,3 +110,51 @@
   console.log("Total: $" + netTotal);
 
 // AVERAGE CHANGE
+
+  let differences = [];
+
+  for (let i = 1; i < totalMonths; i++) {
+    let difference = finances[i][1] - finances[i -1][1];
+    differences.push(difference);
+  }
+
+  let averageChange =
+    differences.reduce((accumulator, value) => accumulator + value, 0) / (totalMonths - 1);
+  
+  console.log("Average Change: " + averageChange.toFixed(2));
+
+// GREATEST INCREASE
+
+  let highestAmount = Math.max(...differences);
+
+  let highestAmountMonth = [];
+
+  for (let i = 0; i < totalMonths; i++) {
+    if (i === differences.indexOf(highestAmount)) {
+      let result = finances[i + 1][0]
+      highestAmountMonth.push(result);
+    }
+  }
+
+  console.log(
+    "Greatest Increase in Profits/Losses: " +
+    highestAmountMonth + " ($" + highestAmount + ")"
+  );
+
+// GREATEST DECREASE
+
+  let lowestAmount = Math.min(...differences);
+
+  let lowestAmountMonth = [];
+
+  for (let i = 0; i < totalMonths; i++) {
+    if (i === differences.indexOf(lowestAmount)) {
+      let result = finances[i + 1][0]
+      lowestAmountMonth.push(result);
+    }
+  }
+
+  console.log(
+    "Greatest Decrease in Profits/Losses: " +
+    lowestAmountMonth + " ($" + lowestAmount + ")"
+  )
