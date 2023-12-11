@@ -95,39 +95,57 @@
 
 // TOTAL MONTHS 
 
-  let totalMonths = finances.length;
+  let totalMonths = finances.length;   
+  
+    // finds and returns the amount of items in the finances array
 
   console.log("Total Months: " + totalMonths);
 
 // NET TOTAL OF PROFIT AND LOSSES
 
-  let netTotal = 0 
+  let netTotal = 0       
+  
+    // establishing the initial value  to later add on to
 
   for (let i = 0; i < totalMonths; i++) {
     netTotal += finances[i][1];
-  }
+  }                                     
+  
+    // the loop will go through every index in the finances array and add the second item (the numbers) in each nested array together
 
   console.log("Total: $" + netTotal);
 
 // AVERAGE CHANGE
 
-  let differences = [];
+  let differences = [];     
+  
+    // establishing the empty differences array to later add on to
 
   for (let i = 1; i < totalMonths; i++) {
-    let difference = finances[i][1] - finances[i -1][1];
+    let difference = finances[i][1] - finances[i - 1][1];
     differences.push(difference);
-  }
+  }                                     
+  
+    // the for loop will go through all the second items in the nested arrays and subtract the next from the previous to find the difference of each month from their respective previous months and adds the result to the differences array
 
   let averageChange =
-    differences.reduce((accumulator, value) => accumulator + value, 0) / (totalMonths - 1);
+    differences.reduce((accumulator, value) => accumulator + value, 0) / (totalMonths - 1);    
+
+    // makes use of the reduce function to add each number in the differences array together and then divide the result by the amount of total months minus 1 because there are only 85 items in the differences array
   
-  console.log("Average Change: " + averageChange.toFixed(2));
+  console.log("Average Change: " + averageChange.toFixed(2));     
+  
+    // uses .toFixed to change the result to two decimal points
 
 // GREATEST INCREASE
 
   let highestAmount = Math.max(...differences);
 
+    // finds the highest amount in the differences array by using the Math.max function
+
   let highestAmountMonth = [];
+
+    // creates an empty array to later push on to
 
   for (let i = 0; i < totalMonths; i++) {
     if (i === differences.indexOf(highestAmount)) {
@@ -135,6 +153,8 @@
       highestAmountMonth.push(result);
     }
   }
+
+    // the for loop will go through all the indices in the differences array until it matches the index of the item stored in the highestAmount variable and once it has found the match, it matches that index to the month that is at the same index in the finances array (adding 1 to i to make up for the additional index) and then pushes that result to the highestAmountMonth array
 
   console.log(
     "Greatest Increase in Profits/Losses: " +
@@ -145,7 +165,11 @@
 
   let lowestAmount = Math.min(...differences);
 
+    // finds the lowest amount in the differences array by using the Math.min function
+
   let lowestAmountMonth = [];
+
+    // creates an empty array to later push on to
 
   for (let i = 0; i < totalMonths; i++) {
     if (i === differences.indexOf(lowestAmount)) {
@@ -153,6 +177,8 @@
       lowestAmountMonth.push(result);
     }
   }
+
+    // doing the same thing previously done for the greatest increase but using the lowest variables instead
 
   console.log(
     "Greatest Decrease in Profits/Losses: " +
