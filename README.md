@@ -16,6 +16,8 @@ You can view the deployed project via [here](https://skechekar.github.io/console
 
 Chrome DevTools can be brought up using *Command+Option+I* on macOS or *Ctrl+Shift+I* on Windows, or by right clicking anywhere on the page and clicking Inspect, and then navigating to the Console tab where you will be able to see the financial records analysis output.
 
+![gif-of-the-deployed-site](./assets/images/consolefinances.gif)
+
 ## Credits
 
 [SkillIcons](https://skillicons.dev/) for the JavaScript and HTML5 icons used in the README
