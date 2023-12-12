@@ -26,7 +26,7 @@ MDN Web Docs used for [push()](https://developer.mozilla.org/en-US/docs/Web/Java
 
 [Intro to Reduce](https://www.youtube.com/watch?v=XKD0aIA3-yM&list=PLo63gcFIe8o0nnhu0F-PpsTc8nkhNe9yu) tutorial used to help understand the reduce() function
 
-[Pokecoder](https://codepen.io/pokecoder/pen/YzxmMrz) for the CSS animation
+[Pokecoder](https://codepen.io/pokecoder/pens/) for the CSS animation
 
 ## License
 
