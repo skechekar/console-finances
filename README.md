@@ -6,7 +6,7 @@ This project utilises the concepts and skills learned in JavaScript fundamentals
 
 ### Built With
 
-![My Skills](https://skillicons.dev/icons?i=js,html)
+![My Skills](https://skillicons.dev/icons?i=js,html,css)
 
 ## Getting Started
 
@@ -25,6 +25,8 @@ Chrome DevTools can be brought up using *Command+Option+I* on macOS or *Ctrl+Shi
 MDN Web Docs used for [push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push), [reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce), [indexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf),  [Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max), and [toFixed()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
 
 [Intro to Reduce](https://www.youtube.com/watch?v=XKD0aIA3-yM&list=PLo63gcFIe8o0nnhu0F-PpsTc8nkhNe9yu) tutorial used to help understand the reduce() function
+
+[Pokecoder](https://codepen.io/pokecoder/pen/YzxmMrz) for the CSS animation
 
 ## License
 
